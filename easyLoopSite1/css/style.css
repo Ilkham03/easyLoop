@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --maincolor: #FF6C1B;
+    --textcolor: #7D3207; 
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin: 0; padding: 0;
+
+}
+
+.wrapper{
+    position: relative;
+}
+
+.container{
+    max-width: 140rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+p, h1,h2,h3,h4,h5,h6{
+    margin: 0; padding: 0;
+}
+
+/* header section -------------------------- */
+
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.header__icon{
+    display: grid;
+    grid-template: column;
+
+}
+
+
+.radius {
+    position: relative;
+    width: 6rem;  /* ширина в два раза меньше высоты, иначе получится полуовал */
+    height: 9rem;
+    border: .4rem solid var(--maincolor);
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+}
+
+.radius:first-child{
+    margin-bottom: 1rem;
+} 
+.radius img{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 2.3rem;
+
+}
+
+
+
+/* intro .////////////////// */
+
+.intro{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 75rem;
+
+    background: url(../img/first/image\ 1.png)  top   no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border: none;
+}
+
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%); 
+}
+
+.intro__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.intro__suptitle{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 8rem;
+    color: #FF6C1B;
+    z-index: 100;
+}
+
+.intro__title{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9rem;
+    line-height: 10rem;
+    color: #FF6C1B;
+    z-index: 10;
+}
+    
+
+
+
+
+/* service=============== */
+
+
+.service__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 3rem;
+    margin: 0 auto;
+    max-width: 145rem;
+    width: 100%;
+}
+
+.content__right{
+    max-width: 85rem;
+    width: 100%;
+}
+
+.right__title{
+    color: var(--maincolor);
+    margin-bottom: 20px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 141.9%;
+}
+
+.right__text{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 151.9%;
+    color: var(--textcolor);
+}
+
+.content__left{
+    max-width: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.left__block{
+    display: grid;
+    grid-template: column;
+    
+    align-items: center;
+    text-align: center;
+}
+
+.block__content{
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+    align-items: center;
+}
+
+.left__line{
+    color: var(--maincolor);
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 151.9%;
+    text-transform: uppercase;
+    color: #FF6C1B;
+    padding: 1.6rem 1rem;
+    margin-right: 2rem;
+}
+
+.line::after{
+    width: 6.4rem;
+    position: absolute;
+    content: "";
+    display: block;
+    border: 1px solid #7D3207;
+    transform: rotate(180deg);
+}
+
+.service__photo{
+    
+    width: 100%;
+    height: 50rem;
+    background: url(../img/service.png)  center   no-repeat;
+    background-size: cover;
+    border-radius: 25rem 25rem 0 0;
+}
+
+
+
+/* partner */
+.partner{
+    background-color: var(--maincolor) ;
+    
+}
+.partner__content{
+    margin: 0 auto;
+    max-width: 145rem;
+    width: 100%;
+}
+
+.main__title{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 10rem 0 5rem  0;
+}
+
+.partner__title{
+    text-transform: capitalize;
+        
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 141.9%;
+    /* or 68px */
+    color: #FFFFFF;
+}
+
+.arrows{
+    display: flex;
+    
+    align-items: center;
+}
+.slider{
+    position: relative;
+
+    cursor: pointer;
+    transition: fill .13s ease;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    
+
+}
+.slider:first-child{
+    margin-right: 15px;
+}
+
+.slider i{
+    position: absolute;
+
+    color: var(--maincolor) ;
+    top: 1.7rem;
+    left: 1.7rem;
+
+    font-size: 3rem;
+}
+
+
+.partner__blocks{
+    padding: 5rem 0;
+}
+
+.blocks__content{
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 1.4rem;
+    
+
+}
+
+.blocks__item{
+    position: relative;
+    display: block;
+    width: 25%;
+    padding: 5rem 2rem;
+    color: var(--maincolor) ;
+    text-align: center;
+    align-items: center;
+    transition: .5s linear;    
+
+}
+.blocks__item:hover{
+    opacity: 1;
+    background: linear-gradient(43.99deg, #FF6C1B -2.53%, #FFFFFF 143.71%);
+    box-shadow: 0px 0px 21px 7px rgba(223, 87, 12, 0.14);
+    border-radius: 30px 30px 0px 0px;
+
+    transform: translateY(-20%);
+
+}
+
+
+
+
+
+.block__img{
+    width: auto;
+    margin-bottom: 1rem;
+    height: 10rem;
+    background-size: cover;
+
+}
+
+
+.item__title{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 151.9%;
+    /* or 36px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--textcolor);
+    
+}
+.item__text{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 151.9%;
+    text-align: center;
+
+    color: var(--textcolor);
+}
+.btn{
+    display: block;
+    opacity: 0;
+    width: 60%;
+    margin: 0 auto;
+    padding: .7rem 1rem;
+    margin-top: 3rem;
+
+    font-family: 'Century Gothic';
+    font-style: normal;
+    border-radius: .6rem;
+    line-height: 151.9%;
+    
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(var(--maincolor) , .4);
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+
+.blocks__item:hover a{
+    background-color: #fff;
+    opacity: 1;
+}
+
+
+.partner__photo{
+    width: 100%;
+    height: 50rem;
+    background: url(../img/partner/benyamin-bohlouli-e7MJLM5VGjY-unsplash\ 1.png)  center   no-repeat;
+    background-size: cover;
+    border-radius: 25rem 25rem 0 0;
+}
+
+
+/* abrec kjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+
+.abrec{
+    background-color: var(--maincolor) ; 
+}
+
+.abrec__content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 145rem;
+    width: 100%;
+    padding: 10rem 0 5rem  0;
+}
+
+.abrec__content__right{
+    max-width: 73rem;
+    width: 100%;
+    margin-right: 4rem;
+}
+
+.abrec__right__title{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 141.9%;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.abrec__rigth__suptitle{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 151.9%;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+    color: #FFFFFF;
+}
+
+
+.abrec__right__text{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 151.9%;
+    color: #7D3207;
+}
+
+
+.abrec__content__left{
+    min-width: 43rem;
+    width: 100%;
+
+}
+.abrec__content__left__rasdel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.abrec__left__list{
+    display: flex;
+    align-items: center;
+}
+
+
+.abrec__left__list i{
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+
+.abrec__left__list p{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 151.9%;
+    /* or 36px */
+    color: #7D3207;
+}
+.abrec__left__list p:hover{
+    text-decoration-line: underline;
+}
+
+.abrec__photo{
+    width: 100%;
+    height: 50rem;
+    background: url(../img/abrec/engin-akyurt-WQ5fGfFHGZ0-unsplash\ 1.png) center   no-repeat;
+    background-size: cover;
+
+    border-radius: 25rem 25rem 0 0;
+}
+
+/* erfah */
+
+.erfah{
+    background-color: var(--maincolor) ; 
+}
+
+.erfah__content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 145rem;
+    width: 100%;
+    padding: 10rem 0 5rem  0;
+}
+
+.erfah__content__left{
+    display: grid;
+    grid-template: column;
+    max-width: 70rem;
+    width: 100%;
+}
+
+.erfah__left__title{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 141.9%;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+.erfah__left__suptitle{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 151.9%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+
+.erfah__left__text{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 151.9%;
+    color: #FFFFFF;
+    margin-top: 1.5rem;
+}
+
+.erfah__left__menu{
+    display: grid;
+    grid-template: column;
+    margin-top: 5rem;
+}
+
+.menu__link{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 151.9%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    text-decoration-line: underline;
+}
+
+
+
+.erfah__right__title{
+    padding-top: 3rem;
+    /* padding-left: 3rem; */
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 151.9%;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+}
+
+.erfah__content__inner{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 2rem;
+}
+
+.erfah__content__item{
+    width: 18rem;
+    height: 29rem;
+    display: grid;
+    grid-template: column;
+    justify-content: center; 
+    padding: 1.5rem 3rem;
+    border: 2px solid #FFFFFF;
+    border-radius: 7px;
+    margin-right: 2rem;
+    align-items: center;
+
+    transition:  border .3s linear;
+}
+
+.erfah__content__item:hover{
+    border: none;
+    background: linear-gradient(31.87deg, #F88B4D 1.07%, #FFFFFF 169.46%);
+    box-shadow: 0px 0px 21px 7px rgba(223, 87, 12, 0.04);
+    border-radius: 7px;
+}
+
+.erfah__img{
+    margin: 0 auto;
+}
+
+.erfah__content__title{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 141.9%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.button{
+    padding: 1rem 3rem;
+    background-color: #fff;
+    color: var(--maincolor);
+    text-decoration: none;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 151.9%;
+    text-align: center;
+    text-transform: uppercase;
+
+    display: block;
+    bottom: 0;
+    justify-content:flex-end ;
+}
+
+.erfah__photo{
+    width: 100%;
+    height: 50rem;
+    background: url(../img/erfah/the-humble-co-cADflhZzgyo-unsplash\ 1.png) center   no-repeat;
+    background-size: cover;
+
+    border-radius: 25rem 25rem 0 0;
+}
+
+
+/* footer============================== */
+.footer{
+    background-color: var(--maincolor);
+    
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 145rem;
+    width: 100%;
+    align-items: center;
+    height: 150px;
+}
+
+.footer__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    
+    
+}
+
+.footer__icon i{
+    color: #fff;
+    font-size: 4rem;
+    margin-right: 2rem;
+}
+
+.footer__icon img{
+    height: 4rem;
+    background-size: cover;
+}
+
+.footer__text{
+    font-size: 2rem;
+    font-weight: 400;
+    transition: .4s linear;
+    position: relative;
+    
+}
+
+.footer__text span:after{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 .5rem;
+    position: relative;
+    top: -5px;
+    border-radius: 50%;
+    background-color: #fff
+}
+
+
+
+
+
+.footer__blocks{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    height: 100px;    
+}
+.block:first-child{
+    margin-right: 5px;
+}
+
+
+.block__text{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 151.9%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF6C1B;
+
+}
